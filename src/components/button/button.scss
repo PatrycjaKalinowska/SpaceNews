@@ -1,4 +1,4 @@
-$primary-font: 'Montserrat', sans-serif;
+@import '../../assets/variables';
 
 .banner-button {
     box-sizing: border-box;
@@ -8,7 +8,7 @@ $primary-font: 'Montserrat', sans-serif;
     border: none;
     margin: 20px;
     font-family: $primary-font;
-    color: #212121;
+    color: $primary-dark-text-color;
     font-weight: 500;
     font-size: 16px;
 }

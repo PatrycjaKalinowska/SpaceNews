@@ -1,22 +1,14 @@
-$countdown-timer-primary-background-color: #212121;
-$primary-font-color: #ddd;
-$primary-font: 'Montserrat', sans-serif;
+@import '../../assets/variables';
 
 .countdown-counter {
     box-sizing: border-box;
     width: 75vw;
     min-height: 30vh;
-    // position: absolute;
-    // top: 100px;
-    // left: 50px;
-    background-color: $countdown-timer-primary-background-color;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    opacity: 80%;
-    border-radius: 10px;
-    color: white;
+    color: $primary-light-text-color;
     font-family: $primary-font;
 }
 

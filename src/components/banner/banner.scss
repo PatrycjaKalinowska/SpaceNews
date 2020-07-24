@@ -1,4 +1,4 @@
-$primary-background-color: #212121;
+@import '../../assets/variables';
 
 .page-banner {
     box-sizing: border-box;
@@ -11,7 +11,7 @@ $primary-background-color: #212121;
     box-sizing: border-box;
     width: 100vw;
     height: 100vh;
-    background-color: $primary-background-color;
+    background-color: $primary-dark-background-color;
     background-image: url(../../assets/Mars_planet_view.jpg);
     background-size: cover;
     background-position: center;

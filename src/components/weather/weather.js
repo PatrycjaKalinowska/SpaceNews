@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './weather.scss';
+import Wrapper from '../wrapper/wrapper';
 
 const Weather = () => {
     const [weatherInfo, setWeatherInfo] = useState("");
@@ -25,7 +26,9 @@ const Weather = () => {
     }, [weatherInfo]);
 
     return <section className='weather'>  
-        {/* {weatherInfoTable.map((el) => <span>{el[1].Season}</span>)} */}
+        <Wrapper>
+            <div className="current-weather-example"></div>
+        </Wrapper>
             
     </section>
 }

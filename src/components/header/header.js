@@ -1,9 +1,12 @@
 import React from 'react';
 import './header.scss';
+import Wrapper from '../wrapper/wrapper';
+
 
 const Header = () => {
 
     return <header className="page-header">
+        <Wrapper>
         <nav className="page-header-menu">
             <span className="page-header-logo">SpaceNEWS</span>
             <ul className="page-header-menu-list">
@@ -13,6 +16,7 @@ const Header = () => {
                 <li className="page-header-menu-item" >menu4</li>
             </ul>
         </nav>
+        </Wrapper>
     </header>
     
 }
