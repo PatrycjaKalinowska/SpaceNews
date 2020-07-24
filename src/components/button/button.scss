@@ -1,0 +1,14 @@
+$primary-font: 'Montserrat', sans-serif;
+
+.banner-button {
+    box-sizing: border-box;
+    background-color: #ddd;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    margin: 20px;
+    font-family: $primary-font;
+    color: #212121;
+    font-weight: 500;
+    font-size: 16px;
+}

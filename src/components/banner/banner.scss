@@ -1,0 +1,23 @@
+$primary-background-color: #212121;
+
+.page-banner {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 500px;
+    position: relative;
+}
+
+.page-banner-container {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    background-color: $primary-background-color;
+    background-image: url(../../assets/Mars_planet_view.jpg);
+    background-size: cover;
+    background-position: center;
+    // position: absolute;
+    // top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

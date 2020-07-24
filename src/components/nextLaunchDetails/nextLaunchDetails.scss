@@ -1,0 +1,10 @@
+$countdown-timer-primary-background-color: #212121;
+
+.next-launch-info {
+    box-sizing: border-box;
+    min-width: 50vw;
+    min-height: 50vh;
+    background-color: $countdown-timer-primary-background-color;
+    display: none;
+}
+
