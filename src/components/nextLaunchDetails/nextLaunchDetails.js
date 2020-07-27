@@ -5,7 +5,7 @@ import NextLaunchPad from '../nextLaunchDetails/nextLaunchPad';
 const NextLaunchDetails = () => {
     const [nextLaunchInfo, setNextLaunchInfo] = useState(null);
     const [nextLaunchName, setNextLaunchName] = useState(null);
-    const [nextLaunchDetails, setNextLaunchDetails] = useState(null);
+    const [nextLaunchDescription, setNextLaunchDescription] = useState(null);
     // const [nextLaunchPad, setNextLaunchPad] = useState(null);
     // const [nextLaunchPadDetails, setNextLaunchPadDetails] = useState(null);
 
@@ -20,7 +20,7 @@ const NextLaunchDetails = () => {
         fetch('https://api.spacexdata.com/v4/launches/next')
         .then(response => {
             return response.json();           
-        }).then(nextLaunchDetails => setNextLaunchDetails(nextLaunchDetails.details))
+        }).then(nextLaunchDetails => setNextLaunchDescription(nextLaunchDetails.details))
     }, []);
 
     // useEffect(() => {
@@ -32,9 +32,8 @@ const NextLaunchDetails = () => {
 
 
     return <div className='next-launch-info'>
-        {nextLaunchName, nextLaunchDetails}
-        {/* <h1>{nextLaunchPad}</h1> */}
-        {/* <NextLaunchPad launchPadId={nextLaunchPad}></NextLaunchPad> */}
+        <h1>{nextLaunchName}</h1>
+        <p>{nextLaunchDescription}</p>
     </div>
 }
 

@@ -7,6 +7,7 @@ const CountdownCounter = () => {
     const [nextLaunchTime, setNextLaunchTime] = useState(null);
     const [timeNow, setTimeNow] = useState(new Date);
     const [countdownTime, setCountdownTime] = useState(null);
+    const [missionDetailsClicked, setMissionDetailsClicked] = useState(false);
 
     useEffect(() => {
 
@@ -41,16 +42,36 @@ const CountdownCounter = () => {
         return formatedTime;
     }
 
-    const handleMoreDetailsClick = () => {
-        
 
+
+    // const handleMoreDetailsClick = (clicked, e) => {
+    //     // e.preventDefault();
+    //     console.log('More details Clicked');
+    //     if (clicked === false) {
+    //         setMissionDetails(false);
+    //     } else {
+    //         setMissionDetails(true);
+    //     }
+    // }
+
+    // let displayMissionDetails;
+
+    //     if (missionDetails === false) {
+    //         displayMissionDetails = null;
+    //     } else displayMissionDetails = <NextLaunchDetails/>
+
+    const displayMissionDetails = () => {
+        console.log('Click :)')
+        setMissionDetailsClicked(!missionDetailsClicked);
     }
+
 
     return <div className='countdown-counter'>
         <span className='countdown-counter-text'>Next launch in</span>
         <span className='countdown-counter-time'>{formatCountdownTime(countdownTime)}</span>
-        <Button></Button>
-        <NextLaunchDetails></NextLaunchDetails>
+        {/* ostylowac buttona! */}
+        <button className='moredetails-banner-button' onClick={displayMissionDetails}>Mission details</button>
+        {missionDetailsClicked && <NextLaunchDetails/>}
     </div>
 }
 
