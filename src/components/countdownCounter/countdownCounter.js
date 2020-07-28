@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './countdownCounter.scss';
-import Button from '../button/button';
 import NextLaunchDetails from '../nextLaunchDetails/nextLaunchDetails';
 
 const CountdownCounter = () => {
@@ -41,24 +40,6 @@ const CountdownCounter = () => {
         formatedTime = `${days} days : ${hours} hours : ${minutes} minutes : ${seconds} seconds`;
         return formatedTime;
     }
-
-
-
-    // const handleMoreDetailsClick = (clicked, e) => {
-    //     // e.preventDefault();
-    //     console.log('More details Clicked');
-    //     if (clicked === false) {
-    //         setMissionDetails(false);
-    //     } else {
-    //         setMissionDetails(true);
-    //     }
-    // }
-
-    // let displayMissionDetails;
-
-    //     if (missionDetails === false) {
-    //         displayMissionDetails = null;
-    //     } else displayMissionDetails = <NextLaunchDetails/>
 
     const displayMissionDetails = () => {
         console.log('Click :)')

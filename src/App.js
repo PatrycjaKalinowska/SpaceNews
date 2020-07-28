@@ -4,6 +4,7 @@ import Header from './components/header/header';
 import Banner from './components/banner/banner';
 import Wrapper from './components/wrapper/wrapper';
 import Weather from './components/weather/weather';
+import Gallery from './components/gallery/gallery';
 
 
 const App = () => {
@@ -11,7 +12,8 @@ const App = () => {
     <div className="App">
       <Header></Header>
       <Banner></Banner>
-      <Weather></Weather>
+      <Gallery></Gallery>
+      {/* <Weather></Weather> */}
     </div>
   );
 }

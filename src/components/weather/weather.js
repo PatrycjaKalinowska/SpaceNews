@@ -11,9 +11,11 @@ const Weather = () => {
             .then(response => {
                 return response.json();           
             }).then(weather => setWeatherInfo(weather));
+            
     }, []);
 
     //converting the object with weather data to more useful form - array with separate object for each Sol
+    //chyba trzeba to wsadzić do state jednak :/
     useEffect(() => {
         weatherInfoTable = Object.entries(weatherInfo).filter((el) => {
             if (el[0] !== 'sol_keys' && el[0] !== "validity_checks") return el;           
@@ -27,7 +29,10 @@ const Weather = () => {
 
     return <section className='weather'>  
         <Wrapper>
-            <div className="current-weather-example"></div>
+            <div className="current-weather-example">
+                {/* no i czemu tutaj weatherInfoTable jest undefined? :/ */}
+                {/* {weatherInfoTable.map((el, index) => (<span key={index}>{el[1].AT.av}</span>))} */}
+            </div>
         </Wrapper>
             
     </section>
