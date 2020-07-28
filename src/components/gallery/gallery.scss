@@ -1,6 +1,6 @@
 @import '../../assets/variables';
 
-* {
+*, *::before, *::after {
     box-sizing: border-box;
 }
 
@@ -16,20 +16,88 @@
         text-align: center;
         margin: 20px auto;
     }
-}
 
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 100%;
-
-    img {
-        max-width: 200px;
-        max-height: 200px;
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         width: 100%;
-                
+    
+        img {
+            max-width: 200px;
+            max-height: 200px;
+            width: 100%;
+                    
+        }
+    
+        div {
+            position: relative;
+            cursor: pointer;
+    
+                &:hover {
+                    &::before, &::after {
+                        opacity: 1;
+                        transition: 0.4s opacity ease;  
+                    }
+                }
+        }
     }
+    
+    .gallery-navigation {
+        position: fixed;
+        z-index: 10;
+        width: 50%;
+        max-width: 800px;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+    
+    }
+    
+    .close-gallery-overlay {
+        position: fixed;
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+        top: 0;
+        left: 0;
+    }
+    
+    .gallery-navigation-buttons {
+        position: relative;
+        
+        a {
+            position: absolute;
+            color: black;
+            text-decoration: none;
+            background: white;
+            width: 50px;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .close-button {
+            top: 0;
+            right: 0;
+        }
+
+        .prev-button {
+            top: 50%;
+            left: 0;
+        }
+
+        .next-button {
+            top: 50%;
+            right: 0;
+        }
+    }
+
+
 }
+
+
+
+
 
 
 
