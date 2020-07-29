@@ -46,14 +46,20 @@ const Gallery = () => {
             <div className='gallery-grid'>
                 {picList.map(displayPic)}
             </div>
-            <div className='close-gallery-overlay' onClick={setClosePicIndex}></div>
-            <div className='gallery-navigation'>
-                <div className='gallery-navigation-buttons'>
-                    <a href='#' className='close-button' onClick={setClosePicIndex}>X</a>
-                    <a href='#' className='prev-button' onClick={setPrevPicIndex}>prev</a>
-                    <a href='#' className='next-button' onClick={setNextPicIndex}>next</a>
+            <div> 
+                {/* <div className='close-gallery-overlay' onClick={setClosePicIndex}></div> */}
+                <div  className='gallery-navigation'>
+                    <div className='gallery-navigation-buttons'>
+                        <a href='#' className='close-button' onClick={setClosePicIndex}>close</a>
+                        { 
+                            currentPicIndex > 0 && <a href='#' className='prev-button' onClick={setPrevPicIndex}>prev</a>
+                        }
+                        {
+                            currentPicIndex+1 < picList.length && <a href='#' className='next-button' onClick={setNextPicIndex}>next</a>
+                        }
+                        <img src={picList[currentPicIndex]} alt="current_pic"></img>
+                    </div>
                 </div>
-
             </div>
         </Wrapper>
     </section>
