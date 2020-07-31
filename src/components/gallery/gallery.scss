@@ -119,7 +119,23 @@
     //     }
     // }
 
+}
 
+.full-size-div {
+    // min-width: 500px;
+    // min-height: 500px;
+    position: absolute;
+    top: 0;
+    left: 100px;
+    z-index: 9999;
+    background-color: white;
+}
+
+.full-size-img {
+    width: 100%;
+    height: 100%;
+    // position: relative;
+    // z-index: 9999;
 }
 
 

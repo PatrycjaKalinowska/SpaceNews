@@ -42,7 +42,6 @@ const CountdownCounter = () => {
     }
 
     const displayMissionDetails = (e) => {
-        // console.log('Click :)')
         e.preventDefault();
         setMissionDetailsClicked(!missionDetailsClicked);
     }
