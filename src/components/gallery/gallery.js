@@ -28,24 +28,6 @@ const Gallery = () => {
         setCurrentPicIndex(index);
     }
 
-    // const setOpenPicIndex = (e, index) => {
-    //     e.preventDefault();
-    //     setCurrentPicIndex(index);
-    //     console.log(e);
-    // }
-
-    // const setClosePicIndex = () => {
-    //     setCurrentPicIndex(null);
-    // }
-
-    // const setPrevPicIndex = () => {
-    //     setCurrentPicIndex(currentPicIndex - 1);
-    // }
-
-    // const setNextPicIndex = () => {
-    //     setCurrentPicIndex(currentPicIndex + 1);
-    // }
-
 
     return <section id='gallery-id' className='gallery-section'>
         <Wrapper>
