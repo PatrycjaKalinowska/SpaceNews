@@ -39,10 +39,17 @@
 
 .page-header-menu-item {
     padding: 20px;
+
+    a {
+        text-decoration: none;
+        color: $primary-light-text-color;
+        font-weight: 500;
+    }
 }
 
 .page-header-menu-item:last-child {
     margin-right: 20px;
+    padding-right: 0;
 }
 
 

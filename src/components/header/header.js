@@ -10,10 +10,18 @@ const Header = () => {
         <nav className="page-header-menu">
             <a href='#' className="page-header-logo">SpaceNEWS</a>
             <ul className="page-header-menu-list">
-                <li className="page-header-menu-item">menu1</li>
-                <li className="page-header-menu-item"> menu2</li>
-                <li className="page-header-menu-item" >menu3</li>
-                <li className="page-header-menu-item" >menu4</li>
+                <li className="page-header-menu-item">
+                    <a href='#banner-id'>next launch</a>
+                </li>
+                <li className="page-header-menu-item">
+                    <a href='#articles-id'>what's up in space?</a>
+                </li>
+                <li className="page-header-menu-item">
+                    <a href='#gallery-id'>gallery</a>
+                </li>
+                {/* <li className="page-header-menu-item">
+                    <a href='#'>contact us</a>
+                </li> */}
             </ul>
         </nav>
         </Wrapper>

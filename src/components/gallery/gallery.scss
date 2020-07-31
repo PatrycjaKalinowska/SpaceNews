@@ -11,10 +11,11 @@
     position: relative;
     background-color: $primary-dark-background-color;
 
-    h1 {
+    .gallery-header {
         color: $primary-light-text-color;
         text-align: center;
         margin: 20px auto;
+        padding-top: 40px;
     }
 
     .gallery-grid {
@@ -61,62 +62,62 @@
         }
     }
     
-    .gallery-navigation {
-        position: fixed;
-        z-index: 10;
-        width: 50%;
-        max-width: 800px;
-        top: 50%;
-        left: 50%;
-        transform: translate3d(-50%, -50%, 0);
+    // .gallery-navigation {
+    //     position: fixed;
+    //     z-index: 10;
+    //     width: 50%;
+    //     max-width: 800px;
+    //     top: 50%;
+    //     left: 50%;
+    //     transform: translate3d(-50%, -50%, 0);
     
-        img {
-            width: 100%;
-            border: 5px solid $primary-light-background-color;
-          }
-    }
+    //     img {
+    //         width: 100%;
+    //         border: 5px solid $primary-light-background-color;
+    //       }
+    // }
     
-    .close-gallery-overlay {
-        position: fixed;
-        z-index: 1;
-        height: 100%;
-        width: 100%;
-        background-color: rgba($color: $primary-dark-background-color, $alpha: 0.5);
-        top: 0;
-        left: 0;
-    }
+    // .close-gallery-overlay {
+    //     position: fixed;
+    //     z-index: 1;
+    //     height: 100%;
+    //     width: 100%;
+    //     background-color: rgba($color: $primary-dark-background-color, $alpha: 0.5);
+    //     top: 0;
+    //     left: 0;
+    // }
     
-    .gallery-navigation-buttons {
-        position: relative;
+    // .gallery-navigation-buttons {
+    //     position: relative;
         
-        a {
-            position: absolute;
-            display: inline;
-            color: $primary-dark-text-color;
-            font-weight: 800;
-            text-decoration: none;
-            background: $primary-light-background-color;
-            line-height: 30px;
-            font-size: 16px;
-            padding: 5px 10px;
-            text-align: center;
-        }
+    //     a {
+    //         position: absolute;
+    //         display: inline;
+    //         color: $primary-dark-text-color;
+    //         font-weight: 800;
+    //         text-decoration: none;
+    //         background: $primary-light-background-color;
+    //         line-height: 30px;
+    //         font-size: 16px;
+    //         padding: 5px 10px;
+    //         text-align: center;
+    //     }
 
-        .close-button {
-            top: 0;
-            right: 0;
-        }
+    //     .close-button {
+    //         top: 0;
+    //         right: 0;
+    //     }
 
-        .prev-button {
-            top: 50%;
-            left: 0;
-        }
+    //     .prev-button {
+    //         top: 50%;
+    //         left: 0;
+    //     }
 
-        .next-button {
-            top: 50%;
-            right: 0;
-        }
-    }
+    //     .next-button {
+    //         top: 50%;
+    //         right: 0;
+    //     }
+    // }
 
 
 }

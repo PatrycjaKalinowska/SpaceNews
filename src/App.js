@@ -7,6 +7,7 @@ import Weather from './components/weather/weather';
 import Gallery from './components/gallery/gallery';
 import Articles from './components/articles/articles';
 import Article from './components/article/article';
+import Footer from './components/footer/footer';
 
 
 const App = () => {
@@ -19,7 +20,8 @@ const App = () => {
         <Article></Article>
         <Article></Article> 
       </Articles>
-      {/* <Gallery></Gallery> */}
+      <Gallery></Gallery>
+      <Footer></Footer>
       {/* <Weather></Weather> */}
     </div>
   );

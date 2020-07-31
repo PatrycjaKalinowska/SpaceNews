@@ -7,7 +7,7 @@ import NextLaunchDetails from '../nextLaunchDetails/nextLaunchDetails';
 const Banner = () => {
 
     return <section className="page-banner">
-        <div className="page-banner-container">
+        <div id='banner-id' className="page-banner-container">
             <CountdownCounter></CountdownCounter>
         </div>
     </section>

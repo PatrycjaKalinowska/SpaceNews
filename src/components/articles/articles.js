@@ -4,7 +4,7 @@ import Wrapper from '../wrapper/wrapper';
 
 const Articles = ( props ) => {
 
-    return <section className='articles-section'>
+    return <section id='articles-id' className='articles-section'>
         <Wrapper>
             <h1 className='articles-section-header'>What's up in Space?</h1>
             <div className='articles-container'>
