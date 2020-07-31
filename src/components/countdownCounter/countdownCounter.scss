@@ -10,29 +10,39 @@
     justify-content: center;
     color: $primary-light-text-color;
     font-family: $primary-font;
+
+    .countdown-counter-text {
+        padding: 20px;
+        font-size: 30px;
+        font-weight: 800;
+    }
+    
+    .countdown-counter-time {
+        padding: 20px;
+        font-size: 40px;
+        font-weight: 800;
+    }
+
+    .countdown-counter-label {
+        padding: 5px;
+    }
+    
+    .moredetails-banner-button {
+        box-sizing: border-box;
+        background-color: $primary-dark-background-color;
+        padding: 10px 20px;
+        border-radius: 20px;
+        border: 1px solid $primary-light-background-color;
+        margin: 20px;
+        font-family: $primary-font;
+        color: $primary-light-text-color;
+        font-weight: 500;
+        font-size: 16px; 
+    }
+    
 }
 
-.countdown-counter-text {
-    padding: 20px;
-}
 
-.countdown-counter-time {
-    font-size: 20px;
-    padding: 20px;
-}
-
-.moredetails-banner-button {
-    box-sizing: border-box;
-    background-color: $primary-dark-background-color;
-    padding: 10px 20px;
-    border-radius: 20px;
-    border: 1px solid $primary-light-background-color;
-    margin: 20px;
-    font-family: $primary-font;
-    color: $primary-light-text-color;
-    font-weight: 500;
-    font-size: 16px;
-}
 
 
 

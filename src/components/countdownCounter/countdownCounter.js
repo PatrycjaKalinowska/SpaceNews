@@ -37,21 +37,22 @@ const CountdownCounter = () => {
         let minutes = Math.floor(((sec % 86400) % 3600) / 60);
         let seconds = (((sec % 86400) % 3600) % 60);
 
-        formatedTime = `${days} days : ${hours} hours : ${minutes} minutes : ${seconds} seconds`;
+        formatedTime = `${days} : ${hours} : ${minutes} :  ${seconds}`;
         return formatedTime;
     }
 
-    const displayMissionDetails = () => {
-        console.log('Click :)')
+    const displayMissionDetails = (e) => {
+        // console.log('Click :)')
+        e.preventDefault();
         setMissionDetailsClicked(!missionDetailsClicked);
     }
 
 
     return <div className='countdown-counter'>
-        <span className='countdown-counter-text'>Next launch in</span>
+        <span className='countdown-counter-text'>Next SpaceX launch in:</span>
         <span className='countdown-counter-time'>{formatCountdownTime(countdownTime)}</span>
-        {/* ostylowac buttona! */}
-        <button className='moredetails-banner-button' onClick={displayMissionDetails}>Mission details</button>
+        <span className='countdown-counter-label'>days : hours : minutes : seconds</span>
+        <button className='moredetails-banner-button' onClick={ e => displayMissionDetails(e)}>Mission details</button>
         {missionDetailsClicked && <NextLaunchDetails/>}
     </div>
 }

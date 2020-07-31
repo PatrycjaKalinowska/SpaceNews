@@ -32,8 +32,8 @@ const NextLaunchDetails = () => {
 
 
     return <div className='next-launch-info'>
-        <h1>{nextLaunchName}</h1>
-        <p>{nextLaunchDescription}</p>
+        <h1 className='next-launch-name'>{nextLaunchName}</h1>
+        <p className='next-launch-description'>{nextLaunchDescription}</p>
     </div>
 }
 

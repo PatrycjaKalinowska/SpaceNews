@@ -8,7 +8,7 @@ const Header = () => {
     return <header className="page-header">
         <Wrapper>
         <nav className="page-header-menu">
-            <span className="page-header-logo">SpaceNEWS</span>
+            <a href='#' className="page-header-logo">SpaceNEWS</a>
             <ul className="page-header-menu-list">
                 <li className="page-header-menu-item">menu1</li>
                 <li className="page-header-menu-item"> menu2</li>

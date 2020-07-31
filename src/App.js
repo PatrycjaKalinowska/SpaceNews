@@ -5,6 +5,8 @@ import Banner from './components/banner/banner';
 import Wrapper from './components/wrapper/wrapper';
 import Weather from './components/weather/weather';
 import Gallery from './components/gallery/gallery';
+import Articles from './components/articles/articles';
+import Article from './components/article/article';
 
 
 const App = () => {
@@ -12,7 +14,12 @@ const App = () => {
     <div className="App">
       <Header></Header>
       <Banner></Banner>
-      <Gallery></Gallery>
+      <Articles>
+        <Article></Article>
+        <Article></Article>
+        <Article></Article> 
+      </Articles>
+      {/* <Gallery></Gallery> */}
       {/* <Weather></Weather> */}
     </div>
   );

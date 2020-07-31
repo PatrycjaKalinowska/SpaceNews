@@ -1,0 +1,44 @@
+@import '../../assets/variables';
+
+.article {
+    position: relative;
+    box-sizing: border-box;
+    // background-color: $secondary-dark-background-color;
+    max-width: 400px;
+    margin: 20px;
+    font-family: $primary-font;
+    color: $primary-light-text-color;
+    flex: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    
+
+    .article-picture {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-image: url('https://spaceholder.cc/600x200');
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 5px auto;
+    }
+
+    .article-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: space-between;
+    }
+
+    .article-header {
+        align-self: center;
+    }
+
+    .article-text {
+        align-self: center;
+    }
+
+    
+}

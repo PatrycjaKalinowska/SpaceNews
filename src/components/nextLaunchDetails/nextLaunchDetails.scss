@@ -3,9 +3,25 @@
 .next-launch-info {
     box-sizing: border-box;
     min-width: 50vw;
-    min-height: 50vh;
+    min-height: 25vh;
     background-color: $primary-dark-background-color;
+    opacity: 70%;
+    border-radius: 15px;
     color: $primary-light-text-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
     
+    .next-launch-name {
+        font-size: 20px;
+        margin: 20px;
+    }
+
+    .next-launch-description {
+        font-size: 16px;
+        margin: 20px;
+    }
 }
 

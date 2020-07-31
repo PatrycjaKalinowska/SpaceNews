@@ -14,11 +14,10 @@ const Gallery = () => {
     ]
     
     
-
-    const displayPic = (el, index) => {
+    const displayPic = (elSrc, index) => {
         return (
-            <div onClick={ (e) => setOpenPicIndex(e, index)}>
-                <img src={el} key={el} alt='space-pic'></img>
+            <div onClick={ (e) => this.setOpenPicIndex(e, index)}>
+                <img src={elSrc} key={elSrc} alt='space-pic'></img>
             </div>
         )
     }
