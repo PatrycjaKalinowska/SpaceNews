@@ -28,11 +28,33 @@
         font-style: italic;
     }
 
+    .gallery-search-container {
+        width: 100%;
+        min-height: 50px;
+        margin: 20px auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
     .gallery-input-label {
         color: $primary-light-text-color;
         text-align: center;
         margin: 20px auto;
         padding: 20px;
+    }
+
+    .gallery-input {
+
+    }
+    .gallery-search-submit {
+        background-color: $primary-light-background-color;
+        color: $primary-dark-text-color;
+        font-family: $primary-font;
+        max-height: 30px;
+        padding: 5px 5px;
+        border-radius: 3px;
+        border: none;
     }
 
     .gallery-grid {
