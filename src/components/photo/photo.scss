@@ -18,7 +18,17 @@
 
 .full-size-photo-img {
     max-width: 100%;
-    max-height: 100%;
+    max-height: 90vh;
+}
+
+.full-size-photo-description {
+    width: 100%;
+    min-height: 50px;
+    background-color: $primary-light-background-color;
+    color: $primary-dark-text-color;
+    font-family: $primary-font;
+    font-size: 12px ;
+    padding: 5px 10px;
 }
 
 .photo-button {

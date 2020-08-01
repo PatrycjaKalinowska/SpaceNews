@@ -42,7 +42,12 @@ const Photo = ( {clickedPicIndex, photos } ) => {
                     <button className='photo-button close-full-size-photo-button' onClick={e => handleCloseButtonClick(e)}>Close</button>
                     {currentPIcIndex !== 0 && <button className='photo-button prev-full-size-photo-button' onClick={e => handlePrevButtonClick(e)}>Prev</button>}
                     {currentPIcIndex < photos.length-1 && <button className='photo-button next-full-size-photo-button' onClick={e => handleNextButtonClick(e)}>Next</button>}
-                    <img className='full-size-photo-img' src={photos[currentPIcIndex]}/>
+                        <img className='full-size-photo-img' src={photos[currentPIcIndex].img_src}/>
+                        <div className='full-size-photo-description'>
+                            <p>Photo taken by rover {photos[currentPIcIndex].rover.name} - {photos[currentPIcIndex].camera.full_name} </p>
+                            <p>Martian Sol no. {photos[currentPIcIndex].sol} (Earth date: {photos[currentPIcIndex].earth_date})</p>
+                            
+                        </div>
                 </div>
             </div>
 
