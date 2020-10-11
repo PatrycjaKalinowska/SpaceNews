@@ -1,3 +1,15 @@
+# About SpaceNews Project :rocket::artificial_satellite::ringed_planet::man_astronaut:
+
+My first front-end project, created in React.
+It's a simple web page with some interesting information about SpaceX missions and Mars exploration, gathered in one place.
+Main features right now:
+- countdown counter to next SpaceX launch (using unofficial SpaceX API to get the data of soonest SpaceX launch),
+- gallery of photos taken by Martian rovers (using NASA API to get the photos and other related data).
+
+:exclamation: Project under development :hammer::hammer::hammer:
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
